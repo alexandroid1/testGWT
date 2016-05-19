@@ -25,7 +25,7 @@ public class MySampleApplication implements EntryPoint {
         button.addClickHandler(new ClickHandler() {
             public void onClick(ClickEvent event) {
                 if (label.getText().equals("")) {
-                    MySampleApplicationService.App.getInstance().getMessage("Hello, World!", new MyAsyncCallback(label));
+                    MySampleApplicationService.App.getInstance().getMessage("Hello, Server!!!", new MyAsyncCallback(label));
                 } else {
                     label.setText("");
                 }
